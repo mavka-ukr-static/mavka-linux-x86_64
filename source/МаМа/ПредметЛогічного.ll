@@ -44,7 +44,7 @@ source_filename = "/home/runner/work/mavka/mavka/\D0\9C\D0\B0\D0\9C\D0\B0/\D0\9F
 @5 = private constant [4 x i8] c"U@M\00"
 @6 = private constant [3 x i8] c"PJ\00"
 @7 = private constant [7 x i8] c"\D1\82\D0\B0\D0\BA\00"
-@8 = private constant [6 x i8] c"\D0\BD\D1\96>\00"
+@8 = private constant [5 x i8] c"\D0\BD\D1\96\00"
 @9 = private constant [58 x i8] c"0EOQGNIBQ\7FBIMQP@UI\7FDJ^\7Fv\1BZ@SQDJ_\1DZITNQv\1B\7FPE\7FDN_\7FNQCJZPQCQ\00"
 @10 = private constant [14 x i8] c"Z@SQDJ_\1DZITNQ\00"
 @11 = private constant [14 x i8] c"Z@SQDJ_\1DZITNQ\00"
@@ -5380,7 +5380,7 @@ if_body_exit:                                     ; preds = %if_body_else, %if_b
   %inst7 = getelementptr %"\D1\8E8", ptr %construct6, i32 0, i32 1
   store ptr @8, ptr %inst7, align 8
   %inst8 = getelementptr %"\D1\8E8", ptr %construct6, i32 0, i32 0
-  store i64 5, ptr %inst8, align 4
+  store i64 4, ptr %inst8, align 4
   %load457 = load ptr, ptr %"\D0\9C", align 8
   %load458 = load %"\D1\8E8", ptr %construct6, align 8
   %inst9 = call ptr @"\D0\9C\D0\B0\D0\9C\D0\B0::\D1\81\D1\82\D0\B2\D0\BE\D1\80\D0\B8\D1\82\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82_\D1\8E\D0\BD\D1\96\D0\BA\D0\BE\D0\B4\D1\83_\D0\B7_\D1\8E8"(ptr %load457, %"\D1\8E8" %load458)
