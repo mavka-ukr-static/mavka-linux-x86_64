@@ -67,7 +67,7 @@ source_filename = "/home/runner/work/mavka/mavka/\D0\9C\D0\B0\D0\9C\D0\B0/\D0\9F
 @28 = private constant [16 x i8] c"Z@SQDJ_\1DTUERJP]\00"
 @29 = private constant [14 x i8] c"Z@SQDJ_\1DBNJBQ\00"
 @30 = private constant [15 x i8] c"Z@SQDJ_\1DBRS@BQ\00"
-@31 = private constant [31 x i8] c"Z@SQDJ_\1DAEHHP@MQBIL\1DHTVB\1DBNJBQ\00"
+@31 = private constant [32 x i8] c"Z@SQDJ_\1DAEHHP@MQBIL\1DHTVB\1DBRS@BQ\00"
 @32 = private constant [19 x i8] c"Z@SQDJ_\1DDBJLMQBE\1DJ\00"
 @33 = private constant [21 x i8] c"Z@SQDJ_\1DDBJLMQBE\1D@AQ\00"
 @34 = private constant [30 x i8] c"Z@SQDJ_\1DDBJLMQBE\1DBIMN^ZPE\1D@AQ\00"
@@ -412,6 +412,8 @@ declare void @"\D0\9C\D0\B0\D0\9C\D0\B0::\D0\BE\D1\87\D0\B8\D1\81\D1\82\D0\B8\D1
 declare i1 @"\D0\9C\D0\B0\D0\9C\D0\B0::\D0\BF\D0\B5\D1\80\D0\B5\D0\B2\D1\96\D1\80\D0\B8\D1\82\D0\B8_\D1\87\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82\D0\B8_\D0\BD\D0\B0\D0\B7\D0\B2\D0\B8_\D1\80\D1\96\D0\B2\D0\BD\D1\96"(ptr, ptr, ptr)
 
 declare i1 @"\D0\9C\D0\B0\D0\9C\D0\B0::\D0\BF\D0\B5\D1\80\D0\B5\D0\B2\D1\96\D1\80\D0\B8\D1\82\D0\B8_\D1\87\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82\D0\B8_\D1\80\D1\96\D0\B2\D0\BD\D1\96"(ptr, ptr, ptr)
+
+declare void @"\D0\9C\D0\B0\D0\9C\D0\B0::\D0\B7\D0\B0\D0\BF\D0\BE\D0\B2\D0\BD\D0\B8\D1\82\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82_\D1\81\D1\82\D1\80\D1\83\D0\BA\D1\82\D1\83\D1\80\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82"(ptr)
 
 declare void @"\D0\9C\D0\B0\D0\9C\D0\B0::\D0\B7\D0\B0\D0\BF\D0\BE\D0\B2\D0\BD\D0\B8\D1\82\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82_\D1\81\D1\82\D1\80\D1\83\D0\BA\D1\82\D1\83\D1\80\D0\B8_\D0\A1\D1\82\D1\80\D1\83\D0\BA\D1\82\D1\83\D1\80\D0\B0"(ptr)
 
@@ -2160,7 +2162,7 @@ entry:                                            ; preds = %alloca
   %inst = getelementptr %"\D1\828", ptr %construct, i32 0, i32 1
   store ptr @31, ptr %inst, align 8
   %inst2 = getelementptr %"\D1\828", ptr %construct, i32 0, i32 0
-  store i64 30, ptr %inst2, align 4
+  store i64 31, ptr %inst2, align 4
   %load687 = load ptr, ptr %"\D0\9C", align 8
   %load688 = load %"\D1\828", ptr %construct, align 8
   %inst3 = call ptr @"\D0\9C\D0\B0\D0\9C\D0\B0::\D0\BD\D0\B0\D0\B7\D0\B2\D0\B0"(ptr %load687, %"\D1\828" %load688)
