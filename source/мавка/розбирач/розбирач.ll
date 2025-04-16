@@ -525,6 +525,79 @@ return:                                           ; preds = %entry
   ret void
 }
 
+define i8 @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\80\D0\BE\D0\B7\D0\B1\D0\B8\D1\80\D0\B0\D1\87::\D0\B2\D0\B8\D0\B7\D0\BD\D0\B0\D1\87\D0\B8\D1\82\D0\B8_\D1\80\D0\BE\D0\B7\D0\BC\D1\96\D1\80_\D1\81\D0\B8\D0\BC\D0\B2\D0\BE\D0\BB\D0\B0_\D1\8E\D0\BD\D1\96\D0\BA\D0\BE\D0\B4\D1\83"(i8 %0) {
+alloca:
+  %return1 = alloca i8, align 1
+  %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82" = alloca i8, align 1
+  br label %entry
+
+entry:                                            ; preds = %alloca
+  store i8 %0, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
+  %load39 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
+  %inst = and i8 %load39, -128
+  %inst2 = icmp eq i8 %inst, 0
+  br i1 %inst2, label %if_body, label %if_body_else
+
+return:                                           ; preds = %if_body_exit17, %if_body_exit17, %if_body15, %if_body10, %if_body5, %if_body
+  %load38 = load i8, ptr %return1, align 1
+  ret i8 %load38
+
+if_body:                                          ; preds = %entry
+  store i8 1, ptr %return1, align 1
+  br label %return
+  br label %if_body_exit
+
+if_body_else:                                     ; preds = %entry
+  br label %if_body_exit
+
+if_body_exit:                                     ; preds = %if_body_else, %if_body
+  %load40 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
+  %inst3 = and i8 %load40, -32
+  %inst4 = icmp eq i8 %inst3, -64
+  br i1 %inst4, label %if_body5, label %if_body_else6
+
+if_body5:                                         ; preds = %if_body_exit
+  store i8 2, ptr %return1, align 1
+  br label %return
+  br label %if_body_exit7
+
+if_body_else6:                                    ; preds = %if_body_exit
+  br label %if_body_exit7
+
+if_body_exit7:                                    ; preds = %if_body_else6, %if_body5
+  %load41 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
+  %inst8 = and i8 %load41, -16
+  %inst9 = icmp eq i8 %inst8, -32
+  br i1 %inst9, label %if_body10, label %if_body_else11
+
+if_body10:                                        ; preds = %if_body_exit7
+  store i8 3, ptr %return1, align 1
+  br label %return
+  br label %if_body_exit12
+
+if_body_else11:                                   ; preds = %if_body_exit7
+  br label %if_body_exit12
+
+if_body_exit12:                                   ; preds = %if_body_else11, %if_body10
+  %load42 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
+  %inst13 = and i8 %load42, -8
+  %inst14 = icmp eq i8 %inst13, -16
+  br i1 %inst14, label %if_body15, label %if_body_else16
+
+if_body15:                                        ; preds = %if_body_exit12
+  store i8 4, ptr %return1, align 1
+  br label %return
+  br label %if_body_exit17
+
+if_body_else16:                                   ; preds = %if_body_exit12
+  br label %if_body_exit17
+
+if_body_exit17:                                   ; preds = %if_body_else16, %if_body15
+  store i8 0, ptr %return1, align 1
+  br label %return
+  br label %return
+}
+
 define i1 @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\80\D0\BE\D0\B7\D0\B1\D0\B8\D1\80\D0\B0\D1\87::\D1\80\D0\BE\D0\B7\D1\96\D0\B1\D1\80\D0\B0\D1\82\D0\B8_\D1\8E8_\D0\BD\D0\B0_\D1\81\D0\BB\D0\BE\D0\B2\D0\B0"(ptr %0, %"\D1\8E8" %1, ptr %2, ptr %3) {
 alloca:
   %return1 = alloca i1, align 1
@@ -5086,79 +5159,6 @@ entry:                                            ; preds = %alloca
 
 return:                                           ; preds = %entry
   ret void
-}
-
-define internal i8 @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\80\D0\BE\D0\B7\D0\B1\D0\B8\D1\80\D0\B0\D1\87::\D0\B2\D0\B8\D0\B7\D0\BD\D0\B0\D1\87\D0\B8\D1\82\D0\B8_\D1\80\D0\BE\D0\B7\D0\BC\D1\96\D1\80_\D1\81\D0\B8\D0\BC\D0\B2\D0\BE\D0\BB\D0\B0_\D1\8E\D0\BD\D1\96\D0\BA\D0\BE\D0\B4\D1\83"(i8 %0) {
-alloca:
-  %return1 = alloca i8, align 1
-  %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82" = alloca i8, align 1
-  br label %entry
-
-entry:                                            ; preds = %alloca
-  store i8 %0, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
-  %load39 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
-  %inst = and i8 %load39, -128
-  %inst2 = icmp eq i8 %inst, 0
-  br i1 %inst2, label %if_body, label %if_body_else
-
-return:                                           ; preds = %if_body_exit17, %if_body_exit17, %if_body15, %if_body10, %if_body5, %if_body
-  %load38 = load i8, ptr %return1, align 1
-  ret i8 %load38
-
-if_body:                                          ; preds = %entry
-  store i8 1, ptr %return1, align 1
-  br label %return
-  br label %if_body_exit
-
-if_body_else:                                     ; preds = %entry
-  br label %if_body_exit
-
-if_body_exit:                                     ; preds = %if_body_else, %if_body
-  %load40 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
-  %inst3 = and i8 %load40, -32
-  %inst4 = icmp eq i8 %inst3, -64
-  br i1 %inst4, label %if_body5, label %if_body_else6
-
-if_body5:                                         ; preds = %if_body_exit
-  store i8 2, ptr %return1, align 1
-  br label %return
-  br label %if_body_exit7
-
-if_body_else6:                                    ; preds = %if_body_exit
-  br label %if_body_exit7
-
-if_body_exit7:                                    ; preds = %if_body_else6, %if_body5
-  %load41 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
-  %inst8 = and i8 %load41, -16
-  %inst9 = icmp eq i8 %inst8, -32
-  br i1 %inst9, label %if_body10, label %if_body_else11
-
-if_body10:                                        ; preds = %if_body_exit7
-  store i8 3, ptr %return1, align 1
-  br label %return
-  br label %if_body_exit12
-
-if_body_else11:                                   ; preds = %if_body_exit7
-  br label %if_body_exit12
-
-if_body_exit12:                                   ; preds = %if_body_else11, %if_body10
-  %load42 = load i8, ptr %"\D0\BF\D0\B5\D1\80\D1\88\D0\B8\D0\B9_\D0\B1\D0\B0\D0\B9\D1\82", align 1
-  %inst13 = and i8 %load42, -8
-  %inst14 = icmp eq i8 %inst13, -16
-  br i1 %inst14, label %if_body15, label %if_body_else16
-
-if_body15:                                        ; preds = %if_body_exit12
-  store i8 4, ptr %return1, align 1
-  br label %return
-  br label %if_body_exit17
-
-if_body_else16:                                   ; preds = %if_body_exit12
-  br label %if_body_exit17
-
-if_body_exit17:                                   ; preds = %if_body_else16, %if_body15
-  store i8 0, ptr %return1, align 1
-  br label %return
-  br label %return
 }
 
 define internal i1 @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\80\D0\BE\D0\B7\D0\B1\D0\B8\D1\80\D0\B0\D1\87::\D0\B2\D0\B8\D0\B4\D1\96\D0\BB\D0\B8\D1\82\D0\B8_\D0\BA\D0\BE\D0\BF\D1\96\D1\8E_\D1\8E8"(ptr %0, %"\D1\8E8" %1, ptr %2) {
