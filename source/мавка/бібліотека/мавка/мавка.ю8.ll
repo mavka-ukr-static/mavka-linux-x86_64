@@ -48,12 +48,12 @@ target triple = "x86_64-pc-linux-gnu"
 @1 = private constant [2 x i8] c"\0A\00"
 @2 = private constant [2 x i8] c"\0A\00"
 @3 = private constant [9 x i8] c"\D0\AF\D0\A2\D0\A3\D0\A2\00"
-@4 = private constant [32 x i8] c"0E\7FBD@NQT]\7FRESEMQDVB@UI\7FU\18\7FB\7F^\18\00"
-@5 = private constant [8 x i8] c"\10m\11\12\11m\10\00"
-@6 = private constant [6 x i8] c"O@BM@\00"
-@7 = private constant [7 x i8] c"BESTJ_\00"
-@8 = private constant [17 x i8] c"H@B@PU@GIUI\1D3/B\11\00"
-@9 = private constant [31 x i8] c"O@BM@kAJANJQUEM@tO@BM@tO@BM@mY\00"
+@4 = private constant [32 x i8] c"Pe\04bd`nqt}\04resemqdvb`ui\04u\18\04b\04~\18\00"
+@5 = private constant [8 x i8] c"\10.\11\12\11.\11\00"
+@6 = private constant [6 x i8] c"o`bm`\00"
+@7 = private constant [7 x i8] c"bestj\7F\00"
+@8 = private constant [17 x i8] c"h`b`pu`giui4SOb\11\00"
+@9 = private constant [31 x i8] c"o`bm`)ajanjquem`/o`bm`/o`bm`.y\00"
 
 declare void @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0_\D1\81\D0\B8\D1\81\D1\82\D0\B5\D0\BC\D0\B0_\D0\B2\D0\B8\D0\B2\D0\B5\D1\81\D1\82\D0\B8_\D1\8E8"(i64, ptr)
 

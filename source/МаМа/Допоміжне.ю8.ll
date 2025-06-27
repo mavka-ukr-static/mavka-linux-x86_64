@@ -47,7 +47,7 @@ target triple = "x86_64-pc-linux-gnu"
 @1 = private constant [2 x i8] c"\0A\00"
 @2 = private constant [2 x i8] c"\0A\00"
 @3 = private constant [9 x i8] c"\D0\AF\D0\A2\D0\A3\D0\A2\00"
-@4 = private constant [32 x i8] c"0E\7FBD@NQT]\7FRESEMQDVB@UI\7FU\18\7FB\7F^\18\00"
+@4 = private constant [32 x i8] c"Pe\04bd`nqt}\04resemqdvb`ui\04u\18\04b\04~\18\00"
 
 define internal void @"\D0\9A\D0\94::\D0\B7\D0\B2\D1\96\D0\BB\D1\8C\D0\BD\D0\B8\D1\82\D0\B8"(ptr %0, ptr %1) {
 alloca:
