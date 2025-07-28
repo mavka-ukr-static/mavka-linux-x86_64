@@ -5,7 +5,6 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
 
@@ -100,6 +99,10 @@ extern void __біб__надрукувати(т8 значення) {
 
 extern void __біб__вивести_ю8(ю8 значення) {
   fwrite(значення.дані, значення.розмір, 1, stdout);
+}
+
+extern void __біб__вивести_байти(позитивне розмір, памʼять_п8 дані) {
+  fwrite(дані, розмір, 1, stdout);
 }
 
 extern void __біб__надрукувати_ю8(ю8 значення) {

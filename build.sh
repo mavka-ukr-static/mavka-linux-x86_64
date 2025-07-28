@@ -29,7 +29,6 @@ case "$Mode" in
     appendCcOption "-O3"
     appendCcOption "-g0"
     appendCcOption "-flto"
-    appendCcOption "-ffast-math"
     appendCcOption "-fvisibility=hidden"
   ;;
   "debug-asan"*)
@@ -56,6 +55,6 @@ appendCcOption "-lpthread"
 
 SourceFiles="$(cat SourceFiles)"
 mkdir -p "out"
-Command="$CC $CC_OPTIONS -o out/мавка $SourceFiles"
+Command="$CC -rdynamic $CC_OPTIONS -o out/мавка $SourceFiles"
 echo "$Command"
 $Command
