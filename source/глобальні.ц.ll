@@ -143,6 +143,8 @@ target triple = "x86_64-pc-linux-gnu"
 @80 = private constant [15 x i8] c"djhp`uit}4p`hbv"
 @81 = private constant [19 x i8] c"djhp`uit}4tusvmuvsv"
 @82 = private constant [5 x i8] c"o`bm`"
+@83 = private constant [14 x i8] c"petmjpzeppjtu}"
+@84 = private constant [14 x i8] c"pebihp`zepjtu}"
 
 declare dso_local void @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D0\921::\D0\BF\D0\B5\D1\80\D0\B5\D0\B7\D0\B0\D0\BF\D0\B8\D1\81\D0\B0\D1\82\D0\B8_\D0\B0\D1\80\D0\B3\D1\83\D0\BC\D0\B5\D0\BD\D1\82_\D0\B2\D0\BA\D0\B0\D0\B7\D1\96\D0\B2\D0\BA\D0\B8"(ptr, ptr, i32, i32)
 
@@ -4999,9 +5001,13 @@ b:
   %v143 = alloca %"\D1\828", align 8
   %v160 = alloca ptr, align 8
   %v161 = alloca %"\D1\828", align 8
+  %v178 = alloca ptr, align 8
+  %v179 = alloca %"\D1\828", align 8
+  %v196 = alloca ptr, align 8
+  %v197 = alloca %"\D1\828", align 8
   br label %b2
 
-b1:                                               ; preds = %b175, %b173, %b155, %b137, %b119, %b104, %b89, %b74, %b59, %b44, %b29, %b14
+b1:                                               ; preds = %b211, %b209, %b191, %b173, %b155, %b137, %b119, %b104, %b89, %b74, %b59, %b44, %b29, %b14
   ret void
 
 b2:                                               ; preds = %b
@@ -5256,6 +5262,56 @@ b174:                                             ; preds = %b157
   br label %b175
 
 b175:                                             ; preds = %b174
+  %v176 = load ptr, ptr %v, align 8
+  %call177 = call ptr @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\81\D1\82\D0\B2\D0\BE\D1\80\D0\B8\D1\82\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82_\D1\87\D0\B8\D1\81\D0\BB\D0\B0"(ptr %v176, double 0x7FF0000000000000)
+  store ptr %call177, ptr %v178, align 8
+  %v180 = getelementptr %"\D1\828", ptr %v179, i32 0, i32 0
+  store i64 14, ptr %v180, align 8
+  %v181 = getelementptr %"\D1\828", ptr %v179, i32 0, i32 1
+  store ptr @83, ptr %v181, align 8
+  %v182 = load ptr, ptr %v, align 8
+  %v183 = load %"\D1\828", ptr %v179, align 8
+  %call184 = call ptr @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\81\D1\82\D0\B2\D0\BE\D1\80\D0\B8\D1\82\D0\B8_\D0\BD\D0\B0\D0\B7\D0\B2\D1\83"(ptr %v182, %"\D1\828" %v183)
+  %v185 = load ptr, ptr %v178, align 8
+  %v186 = load ptr, ptr %v, align 8
+  %call187 = call ptr @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D0\B7\D0\BC\D1\96\D0\BD\D0\B8\D1\82\D0\B8_\D0\B2_\D0\B3\D0\BB\D0\BE\D0\B1\D0\B0\D0\BB\D1\8C\D0\BD\D0\BE\D0\BC\D1\83_\D1\81\D0\B5\D1\80\D0\B5\D0\B4\D0\BE\D0\B2\D0\B8\D1\89\D1\96"(ptr %v186, ptr %call184, ptr %v185)
+  %v188 = load ptr, ptr %v, align 8
+  %call189 = call i1 @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D0\BF\D0\B5\D1\80\D0\B5\D0\B2\D1\96\D1\80\D0\B8\D1\82\D0\B8_\D1\87\D0\B8_\D1\81\D1\82\D0\B0\D0\BD_\D0\BF\D0\B0\D0\B4\D1\96\D0\BD\D0\BD\D1\8F"(ptr %v188)
+  %v190 = icmp ne i1 %call189, false
+  br i1 %v190, label %b191, label %b192
+
+b191:                                             ; preds = %b175
+  br label %b1
+
+b192:                                             ; preds = %b175
+  br label %b193
+
+b193:                                             ; preds = %b192
+  %v194 = load ptr, ptr %v, align 8
+  %call195 = call ptr @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\81\D1\82\D0\B2\D0\BE\D1\80\D0\B8\D1\82\D0\B8_\D0\BF\D1\80\D0\B5\D0\B4\D0\BC\D0\B5\D1\82_\D1\87\D0\B8\D1\81\D0\BB\D0\B0"(ptr %v194, double 0x7FF8000000000000)
+  store ptr %call195, ptr %v196, align 8
+  %v198 = getelementptr %"\D1\828", ptr %v197, i32 0, i32 0
+  store i64 14, ptr %v198, align 8
+  %v199 = getelementptr %"\D1\828", ptr %v197, i32 0, i32 1
+  store ptr @84, ptr %v199, align 8
+  %v200 = load ptr, ptr %v, align 8
+  %v201 = load %"\D1\828", ptr %v197, align 8
+  %call202 = call ptr @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D1\81\D1\82\D0\B2\D0\BE\D1\80\D0\B8\D1\82\D0\B8_\D0\BD\D0\B0\D0\B7\D0\B2\D1\83"(ptr %v200, %"\D1\828" %v201)
+  %v203 = load ptr, ptr %v196, align 8
+  %v204 = load ptr, ptr %v, align 8
+  %call205 = call ptr @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D0\B7\D0\BC\D1\96\D0\BD\D0\B8\D1\82\D0\B8_\D0\B2_\D0\B3\D0\BB\D0\BE\D0\B1\D0\B0\D0\BB\D1\8C\D0\BD\D0\BE\D0\BC\D1\83_\D1\81\D0\B5\D1\80\D0\B5\D0\B4\D0\BE\D0\B2\D0\B8\D1\89\D1\96"(ptr %v204, ptr %call202, ptr %v203)
+  %v206 = load ptr, ptr %v, align 8
+  %call207 = call i1 @"\D0\BC\D0\B0\D0\B2\D0\BA\D0\B0::\D0\BF\D0\B5\D1\80\D0\B5\D0\B2\D1\96\D1\80\D0\B8\D1\82\D0\B8_\D1\87\D0\B8_\D1\81\D1\82\D0\B0\D0\BD_\D0\BF\D0\B0\D0\B4\D1\96\D0\BD\D0\BD\D1\8F"(ptr %v206)
+  %v208 = icmp ne i1 %call207, false
+  br i1 %v208, label %b209, label %b210
+
+b209:                                             ; preds = %b193
+  br label %b1
+
+b210:                                             ; preds = %b193
+  br label %b211
+
+b211:                                             ; preds = %b210
   br label %b1
 }
 
